@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Quizz de Valentine's Day ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="hearts" id="hearts"></div>
+  
+  <div class="container">
+    <h1>❤️ Quizz de Valentine's Day ❤️</h1>
+    <div id="timer">Timp rămas: <span id="time">0</span> secunde</div>
+    
+    <div class="input-container">
+     <b><label for="participantName">Numele echipei:</label></b>
+      <input type="text" id="participantName" placeholder="Introdu numele">
+    </div>
+    
+    <div class="category-box">
+      <div class="category-item" onclick="startQuiz('geografie')">
+       <b> Geografie </b><br>
+        <input type="number" id="geografieSet" min="1" max="3" placeholder="Set">
+      </div>
+      
+      <div class="category-item" onclick="startQuiz('istorie')">
+        <b>Istorie </b><br>
+        <input type="number" id="istorieSet" min="1" max="3" placeholder="Set">
+      </div>
+      
+      <div class="category-item" onclick="startQuiz('cultura')">
+        <b>Cultură generală</b><br>
+        <input type="number" id="culturaSet" min="1" max="3" placeholder="Set">
+      </div>
+      
+      <div class="category-item" onclick="startQuiz('engleza')">
+        <b>Engleză</b><br>
+        <input type="number" id="englezaSet" min="1" max="3" placeholder="Set">
+      </div>
+    </div>
+
+    <div id="quiz-container">
+      <div id="question"></div>
+      <div id="options"></div>
+      <div id="scoreboard"></div>
+    </div>
+
+    <button id="showResultsButton" onclick="showResults()"><b>Afișează rezultate</b></button>
+    
+    <div id="results-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
